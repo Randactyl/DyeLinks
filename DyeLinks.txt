@@ -1,6 +1,6 @@
 ## Title: Dye Station Achievement Links
-## APIVersion: 100009
-## Version: 1.1.0b
+## APIVersion: 100010
+## Version: 1.1.0.2
 ## Author: Randactyl
 
 DyeLinks.lua
