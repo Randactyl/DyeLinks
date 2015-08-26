@@ -1,4 +1,4 @@
---overrides function ZO_Dyeing:AttemptExit(exitingToAchievementId) on line 452 in dyeing_keyboard.lua
+--overrides function ZO_Dyeing:AttemptExit(exitingToAchievementId) in dyeing_keyboard.lua
 function DYEING:AttemptExit(exitingToAchievementId)
     if exitingToAchievementId then
         ACHIEVEMENTS.popup:Hide()
