@@ -1,5 +1,7 @@
 --overrides function ZO_Dyeing:AttemptExit(exitingToAchievementId) in dyeing_keyboard.lua
-function DYEING:AttemptExit(exitingToAchievementId)
+function DYEING.AttemptExit(self, exitingToAchievementId)
+    self.exitingToAchievementId = exitingToAchievementId
+
     if exitingToAchievementId then
         ACHIEVEMENTS.popup:Hide()
 
@@ -11,9 +13,11 @@ function DYEING:AttemptExit(exitingToAchievementId)
     else
         ACHIEVEMENTS.popup:Hide()
 
-        if ZO_Dyeing_AreTherePendingDyes() then
-            if ZO_Dyeing_AreAllItemsBound() then
-                   ZO_Dialogs_ShowDialog("EXIT_DYE_UI")
+        if ZO_Dyeing_AreTherePendingDyes(self.mode) then
+            if ZO_Dyeing_AreAllItemsBound(self.mode) then
+                ZO_Dialogs_ShowDialog("EXIT_DYE_UI")
+            else
+                ZO_Dialogs_ShowDialog("EXIT_DYE_UI_BIND")
             end
         else
             self:ConfirmExit()
