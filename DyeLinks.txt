@@ -1,7 +1,7 @@
 ## Title: Dye Station Achievement Links
 ## Author: Randactyl
-## Version: 1.1.1.1
-## APIVersion: 100017
+## Version: 1.1.1.2
+## APIVersion: 100017 100018
 ## Description: Overrides game function DYEING:AttemptExit(exitingToAchievementId) in dyeing_keyboard.lua
 
 DyeLinks.lua
