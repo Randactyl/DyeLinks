@@ -1,5 +1,5 @@
---overrides function ZO_Dyeing:AttemptExit(exitingToAchievementId) in dyeing_keyboard.lua
-function DYEING.AttemptExit(self, exitingToAchievementId)
+--overrides function ZO_Restyle_Keyboard:AttemptExit(exitingToAchievementId) in restyle_keyboard.lua
+function ZO_RESTYLE_KEYBOARD.AttemptExit(self, exitingToAchievementId)
     self.exitingToAchievementId = exitingToAchievementId
 
     if exitingToAchievementId then
