@@ -1,7 +1,7 @@
 ## Title: Dye Station Achievement Links
 ## Author: Randactyl
-## Version: 1.1.1.3
-## APIVersion: 100019
-
+## Version: 1.1.2.0
+## APIVersion: 100021
 ## Description: Overrides game function ZO_Restyle_Keyboard:AttemptExit(exitingToAchievementId) in restyle_keyboard.lua
+
 DyeLinks.lua
